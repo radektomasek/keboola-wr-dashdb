@@ -1,0 +1,52 @@
+{
+  "title": "Parameters",
+  "type": "object",
+  "required": [
+    "username",
+    "#password",
+    "database",
+    "schema",
+    "hostname",
+    "port"
+  ],
+  "properties": {
+    "username": {
+      "title": "Username",
+      "type": "string",
+      "minLength": 1,
+      "default": ""
+    },
+    "#password": {
+      "title": "Password",
+      "type": "string",
+      "format": "password",
+      "minLength": 1,
+      "default": ""
+    },
+    "database": {
+      "title": "DB name",
+      "type": "string",
+      "minLength": 1,
+      "default": ""
+    },
+    "schema": {
+      "title": "Schema",
+      "type": "string",
+      "minLength": 1,
+      "default": ""
+    },
+    "hostname": {
+      "title": "Hostname",
+      "type": "string",
+      "minLength": 1,
+      "default": ""
+    },
+    "port": {
+      "title": "Port",
+      "type": "integer",
+      "default": 50000,
+      "minimum": 1,
+      "maximum": 999999
+    }
+  }
+}
